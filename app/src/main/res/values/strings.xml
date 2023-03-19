@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PilTp3</string>
+    <string name="hello_pil">Hello Pil</string>
+    <string name="type_something">Type something</string>
+    <string name="error_message">You must to type a message</string>
+    <string name="enter">ENTER</string>
+</resources>
