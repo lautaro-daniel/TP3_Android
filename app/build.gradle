@@ -10,6 +10,7 @@ android {
     buildFeatures{
         viewBinding = true
     }
+
     defaultConfig {
         applicationId "com.example.piltp3"
         minSdk 24
