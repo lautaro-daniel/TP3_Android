@@ -1,12 +1,12 @@
-package com.example.piltp3.mainview
+package com.example.piltp3.mvp.project.view
 
 import android.app.Activity
 import android.widget.Toast
 import com.example.piltp3.R
-import com.example.piltp3.component.ViewInterface
+import com.example.piltp3.mvp.project.component.ViewContract
 import com.example.piltp3.databinding.ActivityMainBinding
 
-class MainView (private var activity:Activity):ViewInterface {
+class MainView (private var activity:Activity): ViewContract {
 
     private var binding: ActivityMainBinding = ActivityMainBinding.inflate(activity.layoutInflater)
 

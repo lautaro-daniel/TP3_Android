@@ -1,7 +1,7 @@
 package com.example.piltp3.mainactivitypresenter
-import com.example.piltp3.component.PresenterInterface
-import com.example.piltp3.component.ViewInterface
-import com.example.piltp3.mainpresenter.MainPresenter
+import com.example.piltp3.mvp.project.component.PresenterContract
+import com.example.piltp3.mvp.project.component.ViewContract
+import com.example.piltp3.mvp.project.mainpresenter.MainPresenter
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -10,10 +10,10 @@ import org.junit.Before
 import org.junit.Test
 
 class MainPresenterTest {
-    private lateinit var mainPresenter: PresenterInterface
+    private lateinit var mainPresenter: PresenterContract
 
     @MockK
-    private lateinit var mainView: ViewInterface
+    private lateinit var mainView: ViewContract
 
     @Before
     fun onBefore(){

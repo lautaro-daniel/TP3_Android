@@ -1,8 +1,8 @@
-package com.example.piltp3.mainpresenter
-import com.example.piltp3.component.PresenterInterface
-import com.example.piltp3.component.ViewInterface
+package com.example.piltp3.mvp.project.mainpresenter
+import com.example.piltp3.mvp.project.component.PresenterContract
+import com.example.piltp3.mvp.project.component.ViewContract
 
-class MainPresenter(private var mainView: ViewInterface) : PresenterInterface {
+class MainPresenter(private var mainView: ViewContract) : PresenterContract {
 
     init {
         mainView.clickButton { onClickButton() }

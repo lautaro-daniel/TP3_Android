@@ -1,8 +1,8 @@
-package com.example.piltp3
+package com.example.piltp3.activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.piltp3.mainpresenter.MainPresenter
-import com.example.piltp3.mainview.MainView
+import com.example.piltp3.mvp.project.mainpresenter.MainPresenter
+import com.example.piltp3.mvp.project.view.MainView
 
 class MainActivity : AppCompatActivity() {
 

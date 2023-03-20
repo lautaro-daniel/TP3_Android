@@ -1,6 +1,6 @@
-package com.example.piltp3.component
+package com.example.piltp3.mvp.project.component
 
-interface ViewInterface {
+interface ViewContract {
     fun setMessage()
     fun getInputMessage(): String
     fun getErrorMessage()
