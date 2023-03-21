@@ -8,4 +8,7 @@
     <dimen name="margin_bottom_editText">150dp</dimen>
 
     <dimen name="margin_top_button">240dp</dimen>
+
+    <dimen name="padding_top_edit_text">12dp</dimen>
+    <dimen name="padding_bottom_edit_text">12dp</dimen>
 </resources>

@@ -1,7 +1,6 @@
 package com.example.piltp3.mainactivitypresenter
-import com.example.piltp3.mvp.project.component.PresenterContract
-import com.example.piltp3.mvp.project.component.ViewContract
-import com.example.piltp3.mvp.project.mainpresenter.MainPresenter
+import com.example.piltp3.mvp.project.contract.MainContract
+import com.example.piltp3.mvp.project.presenter.MainPresenter
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -10,10 +9,10 @@ import org.junit.Before
 import org.junit.Test
 
 class MainPresenterTest {
-    private lateinit var mainPresenter: PresenterContract
+    private lateinit var mainPresenter: MainContract.Presenter
 
     @MockK
-    private lateinit var mainView: ViewContract
+    private lateinit var mainView: MainContract.View
 
     @Before
     fun onBefore(){
@@ -25,7 +24,7 @@ class MainPresenterTest {
     fun `on click button should show an error message`(){
         val nullMessage = ""
         every { mainView.getInputMessage() } returns nullMessage
-        mainPresenter.onClickButton()
+        mainPresenter.onClickButton(mainView.getInputMessage())
         verify { mainView.getErrorMessage() }
     }
 
@@ -33,7 +32,7 @@ class MainPresenterTest {
     fun `on click button should show an message`(){
         val message = "Hello"
         every { mainView.getInputMessage() } returns message
-        mainPresenter.onClickButton()
-        verify { mainView.setMessage()}
+        mainPresenter.onClickButton(mainView.getInputMessage())
+        verify { mainView.setMessage(message)}
     }
 }

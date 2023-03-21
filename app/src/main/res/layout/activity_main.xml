@@ -7,10 +7,10 @@
     tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/tittle"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/tittleText"
+        style="@style/titleText"
         android:text="@string/hello_pil"
         android:textSize="@dimen/text_size"
         android:textAlignment="center"
@@ -24,29 +24,29 @@
         />
 
     <EditText
-        android:id="@+id/etText"
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
+        android:paddingTop="@dimen/padding_top_edit_text"
+        android:paddingBottom="@dimen/padding_bottom_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         android:layout_marginBottom="@dimen/margin_bottom_editText"
         android:hint="@string/type_something"
         />
 
     <Button
-        android:id="@+id/showText"
+        android:id="@+id/button_show_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etText"
+        app:layout_constraintTop_toBottomOf="@id/edit_text"
         android:text="@string/enter"
         android:layout_marginTop="@dimen/margin_top_button"
-        style="@style/tittleText"
+        style="@style/titleText"
         />
 </android.support.constraint.ConstraintLayout>
